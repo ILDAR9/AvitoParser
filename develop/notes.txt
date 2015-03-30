@@ -1,0 +1,2 @@
+ToDO 1)
+change jvm to x86 and retry

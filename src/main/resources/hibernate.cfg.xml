@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">
+            org.hibernate.dialect.MySQLDialect
+        </property>
+        <property name="hibernate.connection.driver_class">
+            com.mysql.jdbc.Driver
+        </property>
+
+        <property name="hibernate.connection.url">
+            jdbc:mysql://localhost/ad_avito?UseUnicode=true&amp;characterEncoding=utf8
+            <!-- jdbc:mysql://localhost/ad_avito?UseUnicode=true&amp;characterEncoding=utf8 -->
+            <!-- jdbc:mysql://84.39.246.154/bl3000_adavito?UseUnicode=true&amp;characterEncoding=utf8 -->
+        </property>
+        <property name="hibernate.connection.username">
+            root
+            <!-- 045467195_admin -->
+        </property>
+        <property name="hibernate.connection.password">
+            P@$$word
+            <!-- qweasd -->
+        </property>
+
+        <property name="current_session_context_class">thread</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernateDialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+
+        <mapping class="org.avitoparser.model.Add" />
+        <mapping class="org.avitoparser.model.Apartment" />
+        <mapping class="org.avitoparser.model.City" />
+        <mapping class="org.avitoparser.model.HouseType" />
+        <mapping class="org.avitoparser.model.Person" />
+
+    </session-factory>
+</hibernate-configuration>

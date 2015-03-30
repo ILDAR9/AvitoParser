@@ -6,3 +6,11 @@ pom.xml.next
 release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
+.class
+*.iml
+.idea/
+*~
+*.png
+phoneImg/
+phoneImgResized/
+logs/
